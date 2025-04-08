@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+# Base URL for the API
+BASE_URL = "https://automatic-space-computing-machine-g75qxpvv5g2p647-8000.app.github.dev/api/"
 
 # Application definition
 
