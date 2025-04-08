@@ -25,10 +25,11 @@ class WorkoutListCreateView(generics.ListCreateAPIView):
     serializer_class = WorkoutSerializer
 
 def api_root(request):
+    base_url = "https://automatic-space-computing-machine-g75qxpvv5g2p647-8000.app.github.dev"
     return Response({
-        'users': '/api/users/',
-        'teams': '/api/teams/',
-        'activity': '/api/activity/',
-        'leaderboard': '/api/leaderboard/',
-        'workouts': '/api/workouts/',
+        'users': f'{base_url}/api/users/',
+        'teams': f'{base_url}/api/teams/',
+        'activity': f'{base_url}/api/activity/',
+        'leaderboard': f'{base_url}/api/leaderboard/',
+        'workouts': f'{base_url}/api/workouts/',
     })
